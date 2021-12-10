@@ -1,0 +1,63 @@
+.buttonClass {
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(31, 255, 195), rgb(255, 31, 191));
+  border: 1px solid rgb(79, 201, 193);
+  color: white;
+  border-radius: 5px;
+  width: 35%;
+  height: 35px;
+  max-width: 150px;
+  font-size: 80%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.buttonClass:hover {
+  background: linear-gradient(
+    105deg,
+    /* Base gradient stops */ rgb(31, 255, 195),
+    rgb(255, 31, 191),
+    /* Repeat your base gradient stops */ rgb(31, 255, 195),
+    rgb(255, 31, 191),
+    /* Repeat your first gradient stop */ rgb(31, 255, 195)
+  );
+
+  background-size: 200% 200%;
+  animation: rainbow 1.5s linear infinite;
+  border: 0;
+  color: #fff;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes buttonAnimation {
+  from {
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 31, 191),
+      rgb(31, 255, 195)
+    );
+  }
+  to {
+    background-image: linear-gradient(
+      to right,
+      rgb(31, 255, 195),
+      rgb(255, 31, 191)
+    );
+  }
+}
+
+.buttonDisabled {
+  cursor: not-allowed;
+}

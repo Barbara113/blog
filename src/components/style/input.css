@@ -1,0 +1,51 @@
+.inputClass {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(79, 201, 193);
+  color: rgb(79, 201, 193);
+  height: 21px;
+  max-width: 150px;
+  font-size: 80%;
+}
+input:focus {
+  outline: none;
+}
+.inputClass:focus {
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(79, 201, 193);
+  color: rgb(79, 201, 193);
+  height: 21px;
+  max-width: 150px;
+  font-size: 80%;
+}
+.inputClass:hover {
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(79, 201, 193);
+  color: rgb(79, 201, 193);
+  height: 21px;
+  max-width: 150px;
+  font-size: 80%;
+}
+@keyframes inputAnimation {
+  from {
+    background-color: rgba(79, 201, 193, 0.1);
+    color: rgb(79, 201, 193);
+  }
+  to {
+    background-color: rgb(79, 201, 193);
+    color: white;
+  }
+}
+
+.inputDisabled {
+  cursor: not-allowed;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 11px;
+}
