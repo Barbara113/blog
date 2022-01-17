@@ -24,8 +24,6 @@ export default class LoginScreen extends Component {
   }
   render() {
     const { email, password } = this.state;
-    console.log(`email`, email);
-    console.log(`password`, password);
     return (
       <>
         <div class="loginWrapper">
@@ -46,7 +44,6 @@ export default class LoginScreen extends Component {
                 value={email}
                 onChange={(e) => {
                   this.onChangeEmail(e.target.value);
-                  console.log(`e.target.value`, e.target.value);
                 }}
                 placeholder="Type your email"
               ></Input>
@@ -58,7 +55,6 @@ export default class LoginScreen extends Component {
                 value={email}
                 onChange={(e) => {
                   this.onChangePassword(e.target.value);
-                  console.log(`e.target.value`, e.target.value);
                 }}
                 type="password"
                 placeholder="Type your password"

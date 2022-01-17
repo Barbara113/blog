@@ -3,19 +3,15 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import LoginScreen from "./components/LoginScreen";
 import Tabs from "./components/Tabs";
+import Datepicker from "./components/Datepicker";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <Tabs
-          tabs={["Login", "Registration", "Connect", "Start"]}
-          colorUnselected="gray"
-        ></Tabs>
-      </header>
+      <header></header>
       <main>
         <div>
-          <LoginScreen></LoginScreen>
+          <Datepicker></Datepicker>
         </div>
       </main>
     </div>

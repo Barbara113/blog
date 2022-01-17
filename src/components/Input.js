@@ -59,7 +59,6 @@ export default class Input extends Component {
       <div>
         <input
           placeholder={placeholder ? placeholder : ""}
-          //value={value ? value : ""}
           label={label}
           style={{
             backgroundColor: color,
