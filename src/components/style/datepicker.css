@@ -1,0 +1,14 @@
+input[type="date" i] {
+  align-items: center;
+  display: -webkit-inline-flex;
+  font-family: monospace;
+  padding-inline-start: 1px;
+  cursor: default;
+  overflow: hidden;
+  padding: 0px;
+  background-color: green;
+}
+
+input[type="date" i]:hover {
+  cursor: pointer;
+}
