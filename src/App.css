@@ -180,3 +180,9 @@ h1 {
 .wrapper div:nth-child(6):hover {
   animation: animacija6 1s ease-in-out infinite;
 }
+
+.inputApp {
+  background: white;
+  width: 200px;
+  margin: auto;
+}
