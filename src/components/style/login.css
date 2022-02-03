@@ -3,7 +3,6 @@ body {
   font-size: 16px;
   color: #333;
   background-image: url("../../pictures/linear-gradient-pink-turquoise-1920x1080-c2-de71bb-03f59f-a-330-f-14.svg");
-  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -16,7 +15,7 @@ body {
   width: 30%;
   margin: auto;
   top: 15vh;
-  height: 67%;
+  height: 75%;
   min-width: 250px;
   text-align: left;
   position: relative;
