@@ -3,13 +3,17 @@ import LoginScreen from "./components/LoginScreen";
 import Tabs from "./components/Tabs";
 import Button from "./components/Button";
 import Input from "./components/Input";
+// import Menu from "./components/Menu";
+// import PopUpMenu from "./components/Menu";
+// import Container from "./components/Menu";
+
 function App() {
   return (
     <div className="App">
       <header></header>
       <main>
         <h1>Testing app</h1>
-        <Tabs tabs={["Login", "Button component", "Input component"]}>
+        <Tabs tabs={["Login", "Button component", "Input component", "Menu"]}>
           <div>
             {" "}
             <LoginScreen></LoginScreen>
