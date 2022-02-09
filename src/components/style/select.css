@@ -1,0 +1,61 @@
+.selectWrapper {
+  max-width: 222px;
+  max-height: 200px;
+  overflow: auto;
+  background: cornsilk;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 3px grey;
+}
+
+.titleSelect:hover {
+  cursor: pointer;
+}
+
+.itemsSelect,
+.titleSelect {
+  padding: 9px;
+}
+
+.itemsSelect {
+  animation-name: example;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  transition: 2s height linear;
+}
+.itemsSelect:hover {
+  cursor: pointer;
+  background-color: rgb(248, 225, 186);
+}
+.active {
+  background-color: wheat;
+  box-shadow: -2px 2px 10px -1px grey;
+}
+.iconOpen {
+  transform: rotate(90deg);
+  display: inline-block;
+  padding: 0px 18px 0px 18px;
+}
+.iconClosed {
+  transform: rotate(-90deg);
+  display: inline-block;
+  padding: 0px 18px 0px 18px;
+}
+
+@keyframes example {
+  0% {
+    opacity: 0;
+    height: 0;
+    margin-top: -2vh;
+    color: white;
+  }
+  70% {
+    display: none;
+    opacity: 0.2;
+    color: white;
+  }
+  100% {
+    opacity: 1;
+    height: fit-content;
+  }
+}
