@@ -3,6 +3,8 @@ import LoginScreen from "./components/LoginScreen";
 import Tabs from "./components/Tabs";
 import Button from "./components/Button";
 import Input from "./components/Input";
+import Select from "./components/Select";
+import Checkbox from "./components/Checkbox";
 // import Menu from "./components/Menu";
 // import PopUpMenu from "./components/Menu";
 // import Container from "./components/Menu";
@@ -13,7 +15,15 @@ function App() {
       <header></header>
       <main>
         <h1>Testing app</h1>
-        <Tabs tabs={["Login", "Button component", "Input component", "Menu"]}>
+        <Tabs
+          tabs={[
+            "Login",
+            "Button component",
+            "Input component",
+            "Select",
+            "Checkbox",
+          ]}
+        >
           <div>
             {" "}
             <LoginScreen></LoginScreen>
@@ -47,6 +57,33 @@ function App() {
             ></Input>{" "}
             <h5>Input email</h5>
             <Input height="25px" type="email" placeholder="email"></Input>{" "}
+          </div>
+          <div className="selectApp">
+            <h5>Select</h5>
+            <Select
+              title="Choose your option"
+              options={[
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4",
+                "Option 5",
+                "Option 6",
+                "Option 7",
+                "Option 8",
+                "Option 9",
+                "Option 10",
+              ]}
+              onClick={(value) => console.log("value", value)}
+            ></Select>
+          </div>
+          <div className="checkboxApp">
+            <h5>Checkbox</h5>
+            <Checkbox
+              label="This is label"
+              positionLabel="down"
+              value="Ovo je value"
+            ></Checkbox>
           </div>
         </Tabs>
       </main>

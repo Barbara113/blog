@@ -186,3 +186,13 @@ h1 {
   width: 200px;
   margin: auto;
 }
+
+.selectApp {
+  width: 222px;
+  margin: auto;
+}
+
+.checkboxApp {
+  width: fit-content;
+  margin: auto;
+}
